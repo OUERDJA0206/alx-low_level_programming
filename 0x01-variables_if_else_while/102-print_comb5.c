@@ -3,7 +3,7 @@
   * main - Entry point
   *
   * Return: Always 0 (Success)
-i  */
+*/
 int main(void)
 {
 	int a, b, c, d;
