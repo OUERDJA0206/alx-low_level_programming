@@ -17,22 +17,22 @@ void times_table(void)
 			{
 				u = k % 10;
 				d = (k - u) / 10;
-				putchar(',');
-				putchar(' ');
-				putchar(d + '0');
-				putchar(u + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(d + '0');
+				_putchar(u + '0');
 			}
 			else
 			{
 				if (j != 0)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
-				putchar(k + '0');
+				_putchar(k + '0');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
