@@ -17,6 +17,6 @@ int main(void)
 		else
 			continue;
 	}
-	printf("sum\n: %d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
