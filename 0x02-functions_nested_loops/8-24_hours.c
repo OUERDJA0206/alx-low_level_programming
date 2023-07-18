@@ -12,6 +12,8 @@ void jack_bauer(void)
 	{
 		for (j = 0; j <= 3; j++)
 		{
+			if ((i <= 1 && j <= 9) || (i <= 2 && j <= 3))
+			{
 			for (k = 0; k <= 5; k++)
 			{
 				for (l = 0; l <= 9; l++)
@@ -23,6 +25,7 @@ void jack_bauer(void)
 					_putchar(l + '0');
 					_putchar('\n');
 				}
+			}
 			}
 		}
 	}
