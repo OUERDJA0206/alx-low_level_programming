@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	unsigned long F1, F2, NEXTF;
+	unsigned long F1 = 0, F2 = 1, NEXTF;
 
 	for (i = 0; i < 50; i++)
 	{
