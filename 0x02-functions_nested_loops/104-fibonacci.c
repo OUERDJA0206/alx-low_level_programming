@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	unsigned long F1, F2, NEXTF;
+	unsigned long F1 = 0, F2 = 1, NEXTF;
 	unsigned long F1_h1, F1_h2, F2_h1, F2_h2;
 	unsigned long h1, h2;
 
