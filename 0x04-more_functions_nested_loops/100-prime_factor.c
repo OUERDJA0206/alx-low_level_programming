@@ -1,39 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*main - Entry point
-*@n: - input integer parameter
-*getMaxPrimeFactor is used to find the largest prime factor of given number
-*Return: always 0.
+* main - prints the largest prime factor of 612852475143
+* Return: always 0
 **/
-long long int getMaxPrimeFactor(long long int n)
-{
-	long long int i, maxPrime = -1;
-
-	while (n % 2 == 0)
-	{
-		maxPrime = 2;
-		n /= 2;
-	}
-	for (i = 3; i * i <= n; i += 2)
-	{
-		while (n % i == 0)
-		{
-			maxPrime = i;
-			n /= i;
-		}
-	}
-	if (n > 2)
-	{
-		maxPrime = n;
-	}
-	return (maxPrime);
-}
 int main(void)
 {
-	long long N = 612852475143;
-	long long resultat = getMaxPrimeFactor(N);
+	unsigned long int i, n = 612852475143;
 
-	printf("%lld\n", resultat);
+	for (i = 3; i < 782849; i = i + 2)
+	{
+		while ((n % i == 0) && (n != i))
+			n = n / i;
+	}
+	printf("%lu\n", n);
 	return (0);
 }
