@@ -8,11 +8,11 @@
 */
 int _strlen(char *s)
 {
-	int compteur;
+	int compteur = 0;
 
 	for ( ; *s != '\0'; *s++)
 	{
 		compteur++;
 	}
-	return (compteur)
+	return (compteur);
 }
