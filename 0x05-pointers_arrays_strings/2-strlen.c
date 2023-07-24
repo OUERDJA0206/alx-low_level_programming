@@ -12,7 +12,7 @@ int _strlen(char *s)
 	const char *lastAdress = s;
 
 	while (*lastAdress)
-		++*lastAdress;
+		++lastAdress;
 
 	return (lastAdress - s);
 }
