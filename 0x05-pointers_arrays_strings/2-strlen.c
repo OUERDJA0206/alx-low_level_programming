@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * _strlen - function with 1 argument
 * @s: char type pointer
