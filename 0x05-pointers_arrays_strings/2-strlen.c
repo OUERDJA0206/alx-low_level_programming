@@ -9,11 +9,11 @@
 */
 int _strlen(char *s)
 {
-	int i = 0;
+	const char *lastAdress = s;
 
-	for ( ; *s != '\0'; *s++)
-	{
-		i++;
-	}
-	return (i);
+	while (*lastAdress)
+		++*lastAdress;
+
+	return (lastAdress - s);
 }
+
