@@ -19,7 +19,8 @@ char *leet(char *a)
 		for (j = 0; lt[j][0] != '\0'; j++)
 		{
 			if (a[i] == lt[j][0])
-			a[i] = lt[j][1};
+			a[i] = lt[j][1];
+		}
 	}
 	return (a);
 }
