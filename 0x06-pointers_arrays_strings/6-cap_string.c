@@ -8,8 +8,9 @@ int specialCharacters(char a)
 {
 	char scA[] = {'\t', '\n', ' ', ',', ';', '!',
 		'.', '?', '\"', '(', ')', '{', '}'};
+	int i;
 
-	for (int i = 0; scA[i] != '\0'; i++)
+	for (i = 0; scA[i] != '\0'; i++)
 	{
 		if (a == scA[i])
 		{
@@ -26,8 +27,9 @@ int specialCharacters(char a)
 char *cap_string(char *a)
 {
 	int specialchar = 1;
+	int i;
 
-	for (int i = 0; a[i] != '\0'; i++)
+	for (i = 0; a[i] != '\0'; i++)
 	{
 		if (specialchar == 1 && (a[i] >= 'a' && a[i] <= 'z'))
 		{
