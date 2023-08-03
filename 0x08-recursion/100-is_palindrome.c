@@ -25,7 +25,7 @@ int check_palindrome(char *s, int start, int end)
 		return (1);
 	if (s[start] != s[end])
 		return (0);
-	return (check_palindrome(s, start + 1, end + 1));
+	return (check_palindrome(s, start + 1, end - 1));
 }
 /**
  * is_palindrome - checks if a string is a palindrome
