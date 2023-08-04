@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
  * main - function to print file name
  * @argc: count of the arguments supplied to the program and the
