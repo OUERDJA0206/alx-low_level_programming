@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	long unsigned int j;
+	unsigned long int j;
 	int i;
 	int add = 0;
 
