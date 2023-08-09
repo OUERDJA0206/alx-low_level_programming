@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, j;
-	int n1 = 0, n2 = 0;
+	unsigned int n1 = 0, n2 = 0;
 	char *array;
 
 	if (s1 == NULL)
