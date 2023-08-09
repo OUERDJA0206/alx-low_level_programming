@@ -13,12 +13,13 @@ char *argstostr(int ac, char **av)
 	int total_length = 0;
 	char *result = NULL;
 	char *temp = NULL;
+	int i;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	for (int i = 0; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		total_length += strlen(av[i]) + 1;
 	}
@@ -28,7 +29,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 	temp = result;
-	for (int i = 0; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		strcpy(temp, av[i]);
 		temp += strlen(av[i]);
