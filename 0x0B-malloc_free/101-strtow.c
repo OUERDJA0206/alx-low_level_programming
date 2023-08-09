@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* strtow - splits a string into words
+* count_words - splits a string into words
 * @str: input string to split
 * Return: pointer to new string
 */
