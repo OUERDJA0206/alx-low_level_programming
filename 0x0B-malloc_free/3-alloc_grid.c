@@ -23,20 +23,19 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < height; i++)
 	{
-		grille[i] = NULL;
-	}
-	for (i = 0; i < height; i++)
-	{
-		grille[i] = (int *)calloc(width, sizeof(int));
+		grille[i] = malloc(sizeof(int) * width);
 		if (grille[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
+			for (--i; i >= 0; i--)
 			{
-				free(grille[j]);
+				free(grille[i]);
 			}
 			free(grille);
 			return (NULL);
 		}
 	}
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			arr[i][j] = 0;
 	return (grille);
 }
